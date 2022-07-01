@@ -45,16 +45,16 @@ Los Angeles //source city <br/>
 #### Expected Output 1:<br/>
 Initialized graph before Dijsktra's:<br/>
 City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
-New York   &emsp;    0.00    &emsp;    No parent &emsp;     Arrival city list is empty<br/>
-Los Angeles  &emsp;  30000.00  &emsp;  No parent  &emsp;    Chicago(2015.40)New York(2789.42)<br/>
-Chicago  &emsp;      30000.00  &emsp;  No parent   &emsp;   New York(611.20)<br/>
+New York   &emsp;     0.00    &emsp;     No parent &emsp;     Arrival city list is empty<br/>
+Los Angeles  &emsp;   30000.00  &emsp;   No parent  &emsp;    Chicago(2015.40)New York(2789.42)<br/>
+Chicago  &emsp;       30000.00  &emsp;   No parent   &emsp;   New York(611.20)<br/>
 
 Print the Dijkstra algorithm running result<br/>
 Source City: Los Angeles<br/>
 Arrival City &emsp; Shortest Dist. &emsp;Shortest Path <br/>
-Los Angeles &emsp;    0.00   &emsp;         Los Angeles<br/>
-Chicago    &emsp;     2015.40    &emsp;     Los Angeles->Chicago<br/>
-New York   &emsp;     2626.60    &emsp;     Los Angeles->Chicago->New York<br/>
+Los Angeles &emsp;  0.00   &emsp;        Los Angeles<br/>
+Chicago    &emsp;   2015.40    &emsp;    Los Angeles->Chicago<br/>
+New York   &emsp;   2626.60    &emsp;    Los Angeles->Chicago->New York<br/>
 
 #### Input 2:<br/>
 5 <br/>
