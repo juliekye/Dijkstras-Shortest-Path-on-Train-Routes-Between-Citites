@@ -3,8 +3,8 @@ C++ program to demonstrate Dijkstra's Shortest Path Algorithm on a weighted and 
 
 ### Usage
 This program prompts the user with the following options:
-  "Enter any key to find shortest train routes from a source city to reachable arrival cities
-  Or select one of the options below:
+  "Enter any key to find shortest train routes from a source city to reachable arrival cities <br/>
+  Or select one of the options below: 
   Q Quit
   ? Help"
   
