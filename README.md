@@ -42,7 +42,7 @@ New York,, //route <br/>
 Los Angeles,New York(2789.42),Chicago(2015.40), //route <br/>
 Los Angeles //source city <br/>
 
-Expected Output 1:<br/>
+#### Expected Output 1:<br/>
 Initialized graph before Dijsktra's:<br/>
 City Name      d Value     PI             Arrival City List<br/>
 New York       0.00        No parent      Arrival city list is empty<br/>
@@ -56,7 +56,7 @@ Los Angeles    0.00           Los Angeles<br/>
 Chicago        2015.40        Los Angeles->Chicago<br/>
 New York       2626.60        Los Angeles->Chicago->New York<br/>
 
-Input 2:<br/>
+#### Input 2:<br/>
 5 <br/>
 Chicago,Duluth(502.71),El Paso(1487.51),Atlanta(718.19), <br/>
 Duluth,El Paso(1527.35), <br/>
@@ -64,8 +64,8 @@ El Paso,Phoenix(429.03),Duluth(1527.35),<br/>
 Atlanta,Duluth(27.64),Chicago(720.14),<br/>
 Phoenix,Chicago(1753.78),Atlanta(1814.81),<br/>
 Phoenix<br/>
-
-Expected Output 2:<br/>
+ 
+#### Expected Output 2:<br/>
 Initialized graph before Dijsktra's:<br/>
 
 City Name      d Value     PI             Arrival City List<br/>
@@ -86,14 +86,14 @@ Atlanta        1814.81        Phoenix->Atlanta<br/>
 Duluth         1842.45        Phoenix->Atlanta->Duluth<br/>
 El Paso        3241.29        Phoenix->Chicago->El Paso<br/>
 
-Input 3: <br/>
+#### Input 3: <br/>
 
-Expected Output 3:<br/>
+#### Expected Output 3:<br/>
 
 
-Input 4: <br/>
+#### Input 4: <br/>
 
-Expected Output 4:<br/>
+#### Expected Output 4:<br/>
 
 
 
