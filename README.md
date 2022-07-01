@@ -44,7 +44,7 @@ Los Angeles //source city <br/>
 
 #### Expected Output 1:<br/>
 Initialized graph before Dijsktra's:<br/>
-City Name  &emsp     d Value &emsp     PI     &emsp        Arrival City List<br/>
+City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
 New York       0.00        No parent      Arrival city list is empty<br/>
 Los Angeles    30000.00    No parent      Chicago(2015.40)New York(2789.42)<br/>
 Chicago        30000.00    No parent      New York(611.20)<br/>
