@@ -2,7 +2,7 @@
 C++ program to demonstrate Dijkstra's Shortest Path Algorithm on a weighted and directed graph where city train stations are the nodes and routes between departure cities and arrival cities are the edges
 
 ### Usage
-This program prompts the user with the following options:
+This program prompts the user with the following options: <br/>
   "Enter any key to find shortest train routes from a source city to reachable arrival cities <br/>
   Or select one of the options below: <br/>
   Q Quit <br/>
