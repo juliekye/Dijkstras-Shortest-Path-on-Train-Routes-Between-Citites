@@ -8,9 +8,9 @@ This program prompts the user with the following options: <br/>
   Q Quit <br/>
   ? Help" <br/>
   
- The Q option terminates the program <br/>
- The ? option presents a help page to inform the user about the program and the appropriate input format to utilize it <br/>
- When any other key is entered, the default option to perform Dijkstra's is selected  <br/>
+- The Q option terminates the program <br/>
+- The ? option presents a help page to inform the user about the program and the appropriate input format to utilize it <br/>
+- When any other key is entered, the default option to perform Dijkstra's is selected  <br/>
 
 Once the default option is selected, the user will first provide the total number of cities involved <br/>
   "Enter number of cities:"
