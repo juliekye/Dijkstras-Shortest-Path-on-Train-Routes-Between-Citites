@@ -35,7 +35,7 @@ Then it will print the final result with all arrival cities and the shortest pat
 **To test this program, download this project and run it on any IDE compatible with C++ programs**
 
 ## Test Cases
-Input 1:<br/>
+###### Input 1:<br/>
 3 //Number of cities <br/>
 Chicago,New York(611.20), //route <br/>
 New York,, //route <br/>
