@@ -35,65 +35,65 @@ Then it will print the final result with all arrival cities and the shortest pat
 **To test this program, download this project and run it on any IDE compatible with C++ programs**
 
 ## Test Cases
-Input 1: <\br>
-3 //Number of cities <\br>
-Chicago,New York(611.20), //route
-New York,, //route
-Los Angeles,New York(2789.42),Chicago(2015.40), //route
-Los Angeles //source city
+Input 1:<br/>
+3 //Number of cities <br/>
+Chicago,New York(611.20), //route <br/>
+New York,, //route <br/>
+Los Angeles,New York(2789.42),Chicago(2015.40), //route <br/>
+Los Angeles //source city <br/>
 
-Expected Output 1:<\br>
-Initialized graph before Dijsktra's:<\br>
-City Name      d Value     PI             Arrival City List<\br>
-New York       0.00        No parent      Arrival city list is empty<\br>
-Los Angeles    30000.00    No parent      Chicago(2015.40)New York(2789.42)<\br>
-Chicago        30000.00    No parent      New York(611.20)<\br>
+Expected Output 1:<br/>
+Initialized graph before Dijsktra's:<br/>
+City Name      d Value     PI             Arrival City List<br/>
+New York       0.00        No parent      Arrival city list is empty<br/>
+Los Angeles    30000.00    No parent      Chicago(2015.40)New York(2789.42)<br/>
+Chicago        30000.00    No parent      New York(611.20)<br/>
 
-Print the Dijkstra algorithm running result<\br>
-Source City: Los Angeles<\br>
-Arrival City  Shortest Dist. Shortest Path  <\br>
-Los Angeles    0.00           Los Angeles<\br>
-Chicago        2015.40        Los Angeles->Chicago<\br>
-New York       2626.60        Los Angeles->Chicago->New York<\br>
+Print the Dijkstra algorithm running result<br/>
+Source City: Los Angeles<br/>
+Arrival City  Shortest Dist. Shortest Path <br/>
+Los Angeles    0.00           Los Angeles<br/>
+Chicago        2015.40        Los Angeles->Chicago<br/>
+New York       2626.60        Los Angeles->Chicago->New York<br/>
 
-Input 2: <\br>
-5 <\br>
-Chicago,Duluth(502.71),El Paso(1487.51),Atlanta(718.19), <\br>
-Duluth,El Paso(1527.35), <\br>
-El Paso,Phoenix(429.03),Duluth(1527.35),<\br>
-Atlanta,Duluth(27.64),Chicago(720.14),<\br>
-Phoenix,Chicago(1753.78),Atlanta(1814.81),<\br>
-Phoenix<\br>
+Input 2:<br/>
+5 <br/>
+Chicago,Duluth(502.71),El Paso(1487.51),Atlanta(718.19), <br/>
+Duluth,El Paso(1527.35), <br/>
+El Paso,Phoenix(429.03),Duluth(1527.35),<br/>
+Atlanta,Duluth(27.64),Chicago(720.14),<br/>
+Phoenix,Chicago(1753.78),Atlanta(1814.81),<br/>
+Phoenix<br/>
 
-Expected Output 2:<\br>
-Initialized graph before Dijsktra's:<\br>
+Expected Output 2:<br/>
+Initialized graph before Dijsktra's:<br/>
 
-City Name      d Value     PI             Arrival City List<\br>
-Phoenix        0.00        No parent      Atlanta(1814.81)Chicago(1753.78)<\br>
-Chicago        30000.00    No parent      Atlanta(718.19)Duluth(502.71)El Paso(1487.51)<\br>
-El Paso        30000.00    No parent      Duluth(1527.35)Phoenix(429.03)<\br>
-Atlanta        30000.00    No parent      Chicago(720.14)Duluth(27.64)<\br>
-Duluth         30000.00    No parent      El Paso(1527.35)<\br>
+City Name      d Value     PI             Arrival City List<br/>
+Phoenix        0.00        No parent      Atlanta(1814.81)Chicago(1753.78)<br/>
+Chicago        30000.00    No parent      Atlanta(718.19)Duluth(502.71)El Paso(1487.51)<br/>
+El Paso        30000.00    No parent      Duluth(1527.35)Phoenix(429.03)<br/>
+Atlanta        30000.00    No parent      Chicago(720.14)Duluth(27.64)<br/>
+Duluth         30000.00    No parent      El Paso(1527.35)<br/>
 
-Print the Dijkstra algorithm running result<\br>
+Print the Dijkstra algorithm running result<br/>
 
-Source City: Phoenix<\br>
+Source City: Phoenix<br/>
 
-Arrival City  Shortest Dist. Shortest Path  <\br>
-Phoenix        0.00           Phoenix<\br>
-Chicago        1753.78        Phoenix->Chicago<\br>
-Atlanta        1814.81        Phoenix->Atlanta<\br>
-Duluth         1842.45        Phoenix->Atlanta->Duluth<\br>
-El Paso        3241.29        Phoenix->Chicago->El Paso<\br>
+Arrival City  Shortest Dist. Shortest Path  <br/>
+Phoenix        0.00           Phoenix<br/>
+Chicago        1753.78        Phoenix->Chicago<br/>
+Atlanta        1814.81        Phoenix->Atlanta<br/>
+Duluth         1842.45        Phoenix->Atlanta->Duluth<br/>
+El Paso        3241.29        Phoenix->Chicago->El Paso<br/>
 
-Input 3: <\br>
+Input 3: <br/>
 
-Expected Output 3:<\br>
+Expected Output 3:<br/>
 
 
-Input 4: <\br>
+Input 4: <br/>
 
-Expected Output 4:<\br>
+Expected Output 4:<br/>
 
 
 
