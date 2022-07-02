@@ -45,7 +45,7 @@ Los Angeles //source city <br/>
 #### Expected Output 1:<br/>
 Initialized graph before Dijsktra's:<br/>
 City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
-New York   &emsp;     0.00    &emsp;     No parent &emsp;     Arrival city list is empty<br/>
+New York   &emsp; &emsp; 0.00    &emsp;     No parent &emsp;     Arrival city list is empty<br/>
 Los Angeles&emsp;     30000.00  &emsp;   No parent  &emsp;    Chicago(2015.40)New York(2789.42)<br/>
 Chicago  &emsp;       30000.00  &emsp;   No parent   &emsp;   New York(611.20)<br/>
 
@@ -141,6 +141,7 @@ Miami,Atlanta(457.6),<br/>
 Seattle<br/>
 
 #### Expected Output 4:<br/>
+<pre>
 City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
 Denver         30000.00    No Parent      Chicago(620.78),Dallas(475.62),Salt Lake(350.50),Santa Fe(180.24),<br/>
 Phoenix        30000.00    No Parent      Seattle(470.67),<br/>
@@ -154,7 +155,7 @@ Seattle        30000.00    No Parent      New York(1320.52),Salt Lake(325.45),<b
 Salt Lake      30000.00    No Parent      Phoenix(450.18),Santa Fe(379.20),<br/>
 New York       30000.00    No Parent      Chicago(320.50),<br/>
 Miami          30000.00    No Parent      Atlanta(457.60),<br/>
-
+</pre>
 Print the Dijkstra algorithm running result<br/>
 
 Source City: Seattle<br/>
