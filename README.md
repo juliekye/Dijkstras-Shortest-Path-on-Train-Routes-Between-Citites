@@ -142,7 +142,7 @@ Seattle<br/>
 
 #### Expected Output 4:<br/>
 <pre>
-City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List
+City Name      d Value     PI             Arrival City List
 Denver         30000.00    No Parent      Chicago(620.78),Dallas(475.62),Salt Lake(350.50),Santa Fe(180.24),
 Phoenix        30000.00    No Parent      Seattle(470.67),
 Santa Fe       30000.00    No Parent      Austin(572.18),Phoenix(275.32),
