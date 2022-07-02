@@ -43,19 +43,22 @@ Los Angeles,New York(2789.42),Chicago(2015.40), //route <br/>
 Los Angeles //source city <br/>
 
 #### Expected Output 1:<br/>
-Initialized graph before Dijsktra's:<br/>
-City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
-New York   &emsp; &emsp; 0.00    &emsp;     No parent &emsp;     Arrival city list is empty<br/>
-Los Angeles&emsp;     30000.00  &emsp;   No parent  &emsp;    Chicago(2015.40)New York(2789.42)<br/>
-Chicago  &emsp;       30000.00  &emsp;   No parent   &emsp;   New York(611.20)<br/>
+<pre>
+Initialized graph before Dijsktra's:
+City Name      d Value     PI             Arrival City List
+Chicago        30000.00    No Parent      New York(611.20),
+New York       30000.00    No Parent      Arrival city list is empty
+Los Angeles    30000.00    No Parent      Chicago(2015.40),New York(2789.42),
 
-Print the Dijkstra algorithm running result<br/>
-Source City: Los Angeles<br/>
-Arrival City &emsp; Shortest Dist. &emsp;Shortest Path <br/>
-Los Angeles &emsp;  0.00   &emsp;        Los Angeles<br/>
-Chicago    &emsp;   2015.40    &emsp;    Los Angeles->Chicago<br/>
-New York   &emsp;   2626.60    &emsp;    Los Angeles->Chicago->New York<br/>
+Print the Dijkstra algorithm running result
 
+Source City: Los Angeles
+
+Arrival City  Shortest Dist. Shortest Path  
+Los Angeles    0.00           Los Angeles
+Chicago        2015.40        Los Angeles->Chicago
+New York       2626.60        Los Angeles->Chicago->New York
+</pre>
 #### Input 2:<br/>
 5 <br/>
 Chicago,Duluth(502.71),El Paso(1487.51),Atlanta(718.19), <br/>
@@ -66,26 +69,26 @@ Phoenix,Chicago(1753.78),Atlanta(1814.81),<br/>
 Phoenix<br/>
  
 #### Expected Output 2:<br/>
-Initialized graph before Dijsktra's:<br/>
+<pre>
+Initialized graph before Dijsktra's:
+City Name      d Value     PI             Arrival City List
+Chicago        30000.00    No Parent      Atlanta(718.19),Duluth(502.71),El Paso(1487.51),
+Duluth         30000.00    No Parent      El Paso(1527.35),
+El Paso        30000.00    No Parent      Duluth(1527.35),Phoenix(429.03),
+Atlanta        30000.00    No Parent      Chicago(720.14),Duluth(27.64),
+Phoenix        30000.00    No Parent      Atlanta(1814.81),Chicago(1753.78),
 
-City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
-Phoenix   &emsp;      0.00     &emsp;    No parent   &emsp;    Atlanta(1814.81)Chicago(1753.78)<br/>
-Chicago  &emsp;       30000.00  &emsp;   No parent   &emsp;    Atlanta(718.19)Duluth(502.71)El Paso(1487.51)<br/>
-El Paso   &emsp;      30000.00  &emsp;   No parent   &emsp;    Duluth(1527.35)Phoenix(429.03)<br/>
-Atlanta   &emsp;      30000.00   &emsp;  No parent   &emsp;    Chicago(720.14)Duluth(27.64)<br/>
-Duluth    &emsp;      30000.00  &emsp;   No parent     &emsp;  El Paso(1527.35)<br/>
+Print the Dijkstra algorithm running result
 
-Print the Dijkstra algorithm running result<br/>
+Source City: Phoenix
 
-Source City: Phoenix<br/>
-
-Arrival City &emsp; Shortest Dist. &emsp;Shortest Path <br/>
-Phoenix &emsp;        0.00    &emsp;        Phoenix<br/>
-Chicago  &emsp;       1753.78  &emsp;       Phoenix->Chicago<br/>
-Atlanta  &emsp;       1814.81  &emsp;       Phoenix->Atlanta<br/>
-Duluth  &emsp;        1842.45  &emsp;       Phoenix->Atlanta->Duluth<br/>
-El Paso   &emsp;      3241.29   &emsp;      Phoenix->Chicago->El Paso<br/>
-
+Arrival City  Shortest Dist. Shortest Path  
+Phoenix        0.00           Phoenix
+Chicago        1753.78        Phoenix->Chicago
+Atlanta        1814.81        Phoenix->Atlanta
+Duluth         1842.45        Phoenix->Atlanta->Duluth
+El Paso        3241.29        Phoenix->Chicago->El Paso
+</pre>
 #### Input 3: <br/>
 8<br/>
 Buffalo,Washington(401.54),Columbus(3025.19),Albany(293.76),<br/>
@@ -99,30 +102,32 @@ Washington,New York(225.70),San Diego(2625.30),<br/>
 Seattle<br/>
 
 #### Expected Output 3:<br/>
-City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
-Buffalo        30000.00    No Parent      Albany(293.76),Columbus(3025.19),Washington(401.54),<br/>
-Albany         30000.00    No Parent      Boston(364.72),<br/>
-Boston         30000.00    No Parent      New York(214.50),<br/>
-New York       30000.00    No Parent      Washington(225.70),<br/>
-Columbus       30000.00    No Parent      Seattle(2418.50),Washington(402.80),<br/>
-San Diego      30000.00    No Parent      Columbus(2224.30),<br/>
-Seattle        30000.00    No Parent      Buffalo(2599.00),Columbus(2420.30),San Diego(1255.34),<br/>
-Washington     30000.00    No Parent      New York(225.70),San Diego(2625.30),<br/>
+<pre>
+Initialized graph before Dijsktra's:
+City Name      d Value     PI             Arrival City List
+Buffalo        30000.00    No Parent      Albany(293.76),Columbus(3025.19),Washington(401.54),
+Albany         30000.00    No Parent      Boston(364.72),
+Boston         30000.00    No Parent      New York(214.50),
+New York       30000.00    No Parent      Washington(225.70),
+Columbus       30000.00    No Parent      Seattle(2418.50),Washington(402.80),
+San Diego      30000.00    No Parent      Columbus(2224.30),
+Seattle        30000.00    No Parent      Buffalo(2599.00),Columbus(2420.30),San Diego(1255.34),
+Washington     30000.00    No Parent      New York(225.70),San Diego(2625.30),
 
-Print the Dijkstra algorithm running result<br/>
+Print the Dijkstra algorithm running result
 
-Source City: Seattle<br/>
+Source City: Seattle
 
-Arrival City &emsp; Shortest Dist. &emsp;Shortest Path <br/>
-Seattle        0.00           Seattle<br/>
-San Diego      1255.34        Seattle->San Diego<br/>
-Columbus       2420.30        Seattle->Columbus<br/>
-Buffalo        2599.00        Seattle->Buffalo<br/>
-Washington     2823.10        Seattle->Columbus->Washington<br/>
-Albany         2892.76        Seattle->Buffalo->Albany<br/>
-New York       3048.80        Seattle->Columbus->Washington->New York<br/>
-Boston         3257.48        Seattle->Buffalo->Albany->Boston<br/>
-
+Arrival City  Shortest Dist. Shortest Path  
+Seattle        0.00           Seattle
+San Diego      1255.34        Seattle->San Diego
+Columbus       2420.30        Seattle->Columbus
+Buffalo        2599.00        Seattle->Buffalo
+Washington     2823.10        Seattle->Columbus->Washington
+Albany         2892.76        Seattle->Buffalo->Albany
+New York       3048.80        Seattle->Columbus->Washington->New York
+Boston         3257.48        Seattle->Buffalo->Albany->Boston
+</pre>
 
 #### Input 4: <br/>
 12<br/>
@@ -142,6 +147,7 @@ Seattle<br/>
 
 #### Expected Output 4:<br/>
 <pre>
+Initialized graph before Dijsktra's:
 City Name      d Value     PI             Arrival City List
 Denver         30000.00    No Parent      Chicago(620.78),Dallas(475.62),Salt Lake(350.50),Santa Fe(180.24),
 Phoenix        30000.00    No Parent      Seattle(470.67),
@@ -155,22 +161,23 @@ Seattle        30000.00    No Parent      New York(1320.52),Salt Lake(325.45),
 Salt Lake      30000.00    No Parent      Phoenix(450.18),Santa Fe(379.20),
 New York       30000.00    No Parent      Chicago(320.50),
 Miami          30000.00    No Parent      Atlanta(457.60),
+
+Print the Dijkstra algorithm running result
+
+Source City: Seattle
+
+Arrival City  Shortest Dist. Shortest Path  
+Seattle        0.00           Seattle
+Salt Lake      325.45         Seattle->Salt Lake
+Santa Fe       704.65         Seattle->Salt Lake->Santa Fe
+Phoenix        775.63         Seattle->Salt Lake->Phoenix
+Austin         1276.83        Seattle->Salt Lake->Santa Fe->Austin
+New York       1320.52        Seattle->New York
+Dallas         1627.07        Seattle->Salt Lake->Santa Fe->Austin->Dallas
+Chicago        1641.02        Seattle->New York->Chicago
+Denver         2177.67        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Denver
+Miami          2187.96        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Miami
+Atlanta        2407.57        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Atlanta
+Washington     2827.81        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Atlanta->Washington
 </pre>
-Print the Dijkstra algorithm running result<br/>
-
-Source City: Seattle<br/>
-
-Arrival City &emsp; Shortest Dist. &emsp;Shortest Path <br/>
-Seattle        0.00           Seattle<br/>
-Salt Lake      325.45         Seattle->Salt Lake<br/>
-Santa Fe       704.65         Seattle->Salt Lake->Santa Fe<br/>
-Phoenix        775.63         Seattle->Salt Lake->Phoenix<br/>
-Austin         1276.83        Seattle->Salt Lake->Santa Fe->Austin<br/>
-New York       1320.52        Seattle->New York<br/>
-Dallas         1627.07        Seattle->Salt Lake->Santa Fe->Austin->Dallas<br/>
-Chicago        1641.02        Seattle->New York->Chicago<br/>
-Denver         2177.67        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Denver<br/>
-Miami          2187.96        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Miami<br/>
-Atlanta        2407.57        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Atlanta<br/>
-Washington     2827.81        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Atlanta->Washington<br/>
 
