@@ -46,7 +46,7 @@ Los Angeles //source city <br/>
 Initialized graph before Dijsktra's:<br/>
 City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
 New York   &emsp;     0.00    &emsp;     No parent &emsp;     Arrival city list is empty<br/>
-Los Angeles  &emsp;   30000.00  &emsp;   No parent  &emsp;    Chicago(2015.40)New York(2789.42)<br/>
+Los Angeles&emsp;   30000.00  &emsp;   No parent  &emsp;    Chicago(2015.40)New York(2789.42)<br/>
 Chicago  &emsp;       30000.00  &emsp;   No parent   &emsp;   New York(611.20)<br/>
 
 Print the Dijkstra algorithm running result<br/>
