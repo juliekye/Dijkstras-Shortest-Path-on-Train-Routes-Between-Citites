@@ -87,17 +87,89 @@ Duluth  &emsp;        1842.45  &emsp;       Phoenix->Atlanta->Duluth<br/>
 El Paso   &emsp;      3241.29   &emsp;      Phoenix->Chicago->El Paso<br/>
 
 #### Input 3: <br/>
+8
+Buffalo,Washington(401.54),Columbus(3025.19),Albany(293.76),
+Albany,Boston(364.72),
+Boston,New York(214.5),
+New York,Washington(225.70),
+Columbus,Washington(402.80),Seattle(2418.50),
+San Diego,Columbus(2224.30),
+Seattle,San Diego(1255.34),Columbus(2420.30),Buffalo(2599.0),
+Washington,New York(225.70),San Diego(2625.30),
+Seattle
 
 #### Expected Output 3:<br/>
 City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
+Buffalo        30000.00    No Parent      Albany(293.76),Columbus(3025.19),Washington(401.54),
+Albany         30000.00    No Parent      Boston(364.72),
+Boston         30000.00    No Parent      New York(214.50),
+New York       30000.00    No Parent      Washington(225.70),
+Columbus       30000.00    No Parent      Seattle(2418.50),Washington(402.80),
+San Diego      30000.00    No Parent      Columbus(2224.30),
+Seattle        30000.00    No Parent      Buffalo(2599.00),Columbus(2420.30),San Diego(1255.34),
+Washington     30000.00    No Parent      New York(225.70),San Diego(2625.30),
+
+Print the Dijkstra algorithm running result
+
+Source City: Seattle
 
 Arrival City &emsp; Shortest Dist. &emsp;Shortest Path <br/>
+Seattle        0.00           Seattle
+San Diego      1255.34        Seattle->San Diego
+Columbus       2420.30        Seattle->Columbus
+Buffalo        2599.00        Seattle->Buffalo
+Washington     2823.10        Seattle->Columbus->Washington
+Albany         2892.76        Seattle->Buffalo->Albany
+New York       3048.80        Seattle->Columbus->Washington->New York
+Boston         3257.48        Seattle->Buffalo->Albany->Boston
+
 
 #### Input 4: <br/>
+12
+Denver,Salt Lake(350.5),Santa Fe(180.24),Dallas(475.62),Chicago(620.78),
+Phoenix,Seattle(470.67),
+Santa Fe,Phoenix(275.32),Austin(572.18),
+Austin,Dallas(350.24),
+Dallas,Austin(250.18),Miami(560.89),Denver(550.6),Atlanta(780.5),
+Atlanta,Washington(420.24),Miami(320.61),Dallas(860.28),
+Chicago,Denver(570.19),
+Washington,New York(250.37),
+Seattle,New York(1320.52),Salt Lake(325.45),
+Salt Lake,Phoenix(450.18),Santa Fe(379.2),
+New York,Chicago(320.5),
+Miami,Atlanta(457.6),
+Seattle
 
 #### Expected Output 4:<br/>
 City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
+Denver         30000.00    No Parent      Chicago(620.78),Dallas(475.62),Salt Lake(350.50),Santa Fe(180.24),
+Phoenix        30000.00    No Parent      Seattle(470.67),
+Santa Fe       30000.00    No Parent      Austin(572.18),Phoenix(275.32),
+Austin         30000.00    No Parent      Dallas(350.24),
+Dallas         30000.00    No Parent      Atlanta(780.50),Austin(250.18),Denver(550.60),Miami(560.89),
+Atlanta        30000.00    No Parent      Dallas(860.28),Miami(320.61),Washington(420.24),
+Chicago        30000.00    No Parent      Denver(570.19),
+Washington     30000.00    No Parent      New York(250.37),
+Seattle        30000.00    No Parent      New York(1320.52),Salt Lake(325.45),
+Salt Lake      30000.00    No Parent      Phoenix(450.18),Santa Fe(379.20),
+New York       30000.00    No Parent      Chicago(320.50),
+Miami          30000.00    No Parent      Atlanta(457.60),
+
+Print the Dijkstra algorithm running result
+
+Source City: Seattle
 
 Arrival City &emsp; Shortest Dist. &emsp;Shortest Path <br/>
-
+Seattle        0.00           Seattle
+Salt Lake      325.45         Seattle->Salt Lake
+Santa Fe       704.65         Seattle->Salt Lake->Santa Fe
+Phoenix        775.63         Seattle->Salt Lake->Phoenix
+Austin         1276.83        Seattle->Salt Lake->Santa Fe->Austin
+New York       1320.52        Seattle->New York
+Dallas         1627.07        Seattle->Salt Lake->Santa Fe->Austin->Dallas
+Chicago        1641.02        Seattle->New York->Chicago
+Denver         2177.67        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Denver
+Miami          2187.96        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Miami
+Atlanta        2407.57        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Atlanta
+Washington     2827.81        Seattle->Salt Lake->Santa Fe->Austin->Dallas->Atlanta->Washington
 
