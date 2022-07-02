@@ -142,19 +142,19 @@ Seattle<br/>
 
 #### Expected Output 4:<br/>
 <pre>
-City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List<br/>
-Denver         30000.00    No Parent      Chicago(620.78),Dallas(475.62),Salt Lake(350.50),Santa Fe(180.24),<br/>
-Phoenix        30000.00    No Parent      Seattle(470.67),<br/>
-Santa Fe       30000.00    No Parent      Austin(572.18),Phoenix(275.32),<br/>
-Austin         30000.00    No Parent      Dallas(350.24),<br/>
-Dallas         30000.00    No Parent      Atlanta(780.50),Austin(250.18),Denver(550.60),Miami(560.89),<br/>
-Atlanta        30000.00    No Parent      Dallas(860.28),Miami(320.61),Washington(420.24),<br/>
-Chicago        30000.00    No Parent      Denver(570.19),<br/>
-Washington     30000.00    No Parent      New York(250.37),<br/>
-Seattle        30000.00    No Parent      New York(1320.52),Salt Lake(325.45),<br/>
-Salt Lake      30000.00    No Parent      Phoenix(450.18),Santa Fe(379.20),<br/>
-New York       30000.00    No Parent      Chicago(320.50),<br/>
-Miami          30000.00    No Parent      Atlanta(457.60),<br/>
+City Name  &emsp;     d Value &emsp;     PI     &emsp;        Arrival City List
+Denver         30000.00    No Parent      Chicago(620.78),Dallas(475.62),Salt Lake(350.50),Santa Fe(180.24),
+Phoenix        30000.00    No Parent      Seattle(470.67),
+Santa Fe       30000.00    No Parent      Austin(572.18),Phoenix(275.32),
+Austin         30000.00    No Parent      Dallas(350.24),
+Dallas         30000.00    No Parent      Atlanta(780.50),Austin(250.18),Denver(550.60),Miami(560.89),
+Atlanta        30000.00    No Parent      Dallas(860.28),Miami(320.61),Washington(420.24),
+Chicago        30000.00    No Parent      Denver(570.19),
+Washington     30000.00    No Parent      New York(250.37),
+Seattle        30000.00    No Parent      New York(1320.52),Salt Lake(325.45),
+Salt Lake      30000.00    No Parent      Phoenix(450.18),Santa Fe(379.20),
+New York       30000.00    No Parent      Chicago(320.50),
+Miami          30000.00    No Parent      Atlanta(457.60),
 </pre>
 Print the Dijkstra algorithm running result<br/>
 
